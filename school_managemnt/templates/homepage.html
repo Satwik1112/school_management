@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="dropdown">
+  <button class="dropbtn">LogIn</button>
+  <div class="dropdown-content">
+    <a href="#">As Admin</a>
+    <a href="{% url 'login' %}">As Teacher</a>
+    <a href="{% url 'login' %}">As Student</a>
+  </div>
+</div>
+
+<div class="dropdown">
+  <button class="dropbtn">SignUp</button>
+  <div class="dropdown-content">
+    <a href="signup_teacher">As Teacher</a>
+    <a href="signup_student">As Student</a>
+  </div>
+</div>
+
+{% endblock content%}
